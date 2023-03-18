@@ -14,3 +14,15 @@ const product3 = () =>
 const product4 = () =>
     imgContainer.innerHTML = `<img class="w-full rounded-md cursor-pointer" src="images/image-product-4.jpg" alt="">`;
 
+    let amountNum = parseInt(document.getElementById('amount-num').innerText);
+const plus = () => {
+    document.getElementById('amount-num').innerText = (amountNum++)+ 1;
+}
+
+const minus = () => {
+    if(amountNum>0){
+        document.getElementById('amount-num').innerText = (amountNum--) - 1;
+    }
+};
+    
+    

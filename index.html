@@ -95,9 +95,9 @@
             <p class="font-base text-slate-500 text-xl line-through mt-4">$250.00</p>
             <div class="flex mt-4">
                 <div  class="flex items-center justify-between px-4 text-orange-500 bg-slate-100 w-1/5 py-3 rounded-md">
-                    <i class="fa-solid fa-minus"></i>
-                    <p class="text-black font-semibold">0</p>
-                    <i class="fa-solid fa-plus"></i>
+                    <i onclick="minus()"  class="fa-solid fa-minus cursor-pointer"></i>
+                    <p id="amount-num" class="text-black font-semibold">0</p>
+                    <i onclick="plus()" class="fa-solid fa-plus cursor-pointer"></i>
                 </div>
                 <button class=" px-10 py-3 bg-orange-500 text-white rounded-md ml-6">Add to cart</button>
             </div>
