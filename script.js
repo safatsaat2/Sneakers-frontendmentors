@@ -14,4 +14,3 @@ const product3 = () =>
 const product4 = () =>
     imgContainer.innerHTML = `<img class="w-full rounded-md cursor-pointer" src="images/image-product-4.jpg" alt="">`;
 
-    const body = document.getElementById();
