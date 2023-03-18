@@ -6,8 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family: 'Kumbh Sans', sans-serif;
+        };
+    </style>
     <title>Sneakers Product Page</title>
 </head>
 
@@ -40,36 +50,61 @@
                 <li class="pb-6 hover:border-b-2 border-amber-500"><a>Contact</a></li>
             </ul>
             <div class="dropdown pb-6">
-                <label tabindex="0" class="border-2 px-4 py-2 cursor-pointer rounded-lg border-orange-500">Cart</label>
-                <img tabindex="0" class="w-10 h-10 border-2 border-orange-500 rounded-full ml-6 inline cursor-pointer" src="images/image-avatar.png" alt="" srcset="">
-                <div tabindex="0" class="dropdown-content card card-compact w-64 p-2 shadow bg-orange-500 text-primary-content mt-2">
+                <label tabindex="0" class=" px-4 py-2 cursor-pointer rounded-lg text-white bg-orange-500">Cart</label>
+                <img tabindex="0" class="w-10 h-10 border-2 border-orange-500 rounded-full ml-6 inline cursor-pointer"
+                    src="images/image-avatar.png" alt="" srcset="">
+                <div tabindex="0"
+                    class="dropdown-content card card-compact w-64 p-2 shadow bg-amber-500 text-primary-content mt-2">
                     <div class="card-body">
-                      <h3 class="text-xl text-center">Cart</h3>
-                      <hr>
-                      <p class="text-center">Your cart  is Empty</p>
+                        <h3 class="text-xl text-center">Cart</h3>
+                        <hr>
+                        <p class="text-center">Your cart is Empty</p>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
     <hr class="-mt-4 mx-40">
     <!-- Navbar ends -->
 
-    <section class=" lg:flex px-40 my-12">
+    <section class=" lg:flex items-center px-40 my-12">
         <div class="flex flex-col items-center w-1/2">
             <div class="w-2/3">
                 <img class="w-full rounded-md cursor-pointer" src="images/image-product-1.jpg" alt="">
             </div>
             <div class="flex gap-x-2 mt-4">
-                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50" src="images/image-product-1-thumbnail.jpg" alt="">
-                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50" src="images/image-product-2-thumbnail.jpg" alt="">
-                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50" src="images/image-product-3-thumbnail.jpg" alt="">
-                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50" src="images/image-product-4-thumbnail.jpg" alt="">
+                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
+                    src="images/image-product-1-thumbnail.jpg" alt="">
+                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
+                    src="images/image-product-2-thumbnail.jpg" alt="">
+                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
+                    src="images/image-product-3-thumbnail.jpg" alt="">
+                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
+                    src="images/image-product-4-thumbnail.jpg" alt="">
             </div>
         </div>
-        <div>
-
+        <div class="w-1/2">
+            <p class="font-bold text-sm text-orange-500">SNEAKER COMPANY</p>
+            <h1 class="font-bold text-5xl mt-4">Fall Limited Edition Sneakers</h1>
+            <p class="text-base text-slate-500 pr-4 mt-4">These low-top sneakers feature a technical fabric upper and leather details, with padded collar and tongue. The logoed metal plaque is applied on the side.</p>
+            
+            <div class="flex items-center mt-4">
+                <p class="font-bold text-3xl">$125.00</p>
+                <div class="bg-orange-50 text-orange-500 rounded-md px-2 mx-4">50%</div>
+            </div>
+            <p class="font-base text-slate-500 text-xl line-through mt-4">$250.00</p>
+            <div class="flex mt-4">
+                <div  class="flex items-center justify-between px-4 text-orange-500 bg-slate-100 w-1/5 py-3 rounded-md">
+                    <i class="fa-solid fa-minus"></i>
+                    <p class="text-black font-semibold">0</p>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <button class=" px-10 py-3 bg-orange-500 text-white rounded-md ml-6">Add to cart</button>
+            </div>
+            
+            
         </div>
+        
     </section>
 
 
