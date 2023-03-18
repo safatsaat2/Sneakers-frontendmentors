@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sneakers Product Page</title>
+</head>
+
+<body>
+    <!-- Nav Bar start -->
+    <div class="navbar bg-base-100 lg:px-40">
+        <div class="lg:mx-auto">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <img class="pb-6" src="images/logo.svg" alt="">
+        </div>
+        <div class="navbar hidden lg:flex justify-between">
+            <ul class="menu menu-horizontal px-1 ml-6">
+                <li class="pb-6 hover:border-b-2 border-amber-500"><a>Collections</a></li>
+                <li class="pb-6 hover:border-b-2 border-amber-500"><a>Men</a></li>
+                <li class="pb-6 hover:border-b-2 border-amber-500"><a>Women</a></li>
+                <li class="pb-6 hover:border-b-2 border-amber-500"><a>About</a></li>
+                <li class="pb-6 hover:border-b-2 border-amber-500"><a>Contact</a></li>
+            </ul>
+            <div class="dropdown pb-6">
+                <label tabindex="0" class="border-2 px-4 py-2 cursor-pointer rounded-lg border-orange-500">Cart</label>
+                <img tabindex="0" class="w-10 h-10 border-2 border-orange-500 rounded-full ml-6 inline cursor-pointer" src="images/image-avatar.png" alt="" srcset="">
+                <div tabindex="0" class="dropdown-content card card-compact w-64 p-2 shadow bg-orange-500 text-primary-content mt-2">
+                    <div class="card-body">
+                      <h3 class="text-xl text-center">Cart</h3>
+                      <hr>
+                      <p class="text-center">Your cart  is Empty</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <hr class="-mt-4 mx-40">
+    <!-- Navbar ends -->
+
+    <section class=" lg:flex px-40 my-12">
+        <div class="flex flex-col items-center w-1/2">
+            <div class="w-2/3">
+                <img class="w-full rounded-md cursor-pointer" src="images/image-product-1.jpg" alt="">
+            </div>
+            <div class="flex gap-x-2 mt-4">
+                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50" src="images/image-product-1-thumbnail.jpg" alt="">
+                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50" src="images/image-product-2-thumbnail.jpg" alt="">
+                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50" src="images/image-product-3-thumbnail.jpg" alt="">
+                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50" src="images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+
+
+    <script src="https://kit.fontawesome.com/536d59ba9f.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
