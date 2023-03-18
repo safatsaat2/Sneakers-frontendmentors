@@ -69,17 +69,17 @@
 
     <section class=" lg:flex items-center px-40 my-12">
         <div class="flex flex-col items-center w-1/2">
-            <div class="w-2/3">
-                <img class="w-full rounded-md cursor-pointer" src="images/image-product-1.jpg" alt="">
+            <div id="img-container" class="w-2/3">
+                <label for="my-modal-3"><img class="w-full rounded-md cursor-pointer" src="images/image-product-1.jpg" alt=""></label>               
             </div>
             <div class="flex gap-x-2 mt-4">
-                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
+                <img onclick="product1()" class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
                     src="images/image-product-1-thumbnail.jpg" alt="">
-                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
+                <img onclick="product2()" class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
                     src="images/image-product-2-thumbnail.jpg" alt="">
-                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
+                <img onclick="product3()" class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
                     src="images/image-product-3-thumbnail.jpg" alt="">
-                <img class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
+                <img onclick="product4()" class="rounded-md w-20 h-20 cursor-pointer hover:opacity-50"
                     src="images/image-product-4-thumbnail.jpg" alt="">
             </div>
         </div>
@@ -107,9 +107,17 @@
         
     </section>
 
-
+<!-- modal -->
+<input type="checkbox" id="my-modal-3" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box relative">
+    <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+  </div>
+</div>
+<!-- modal -->
 
     <script src="https://kit.fontawesome.com/536d59ba9f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
 
